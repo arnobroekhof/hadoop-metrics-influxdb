@@ -2,10 +2,12 @@
 Hadoop metrics sink for influxdb 
 
 [![Travis Build Status](https://secure.travis-ci.org/arnobroekhof/hadoop-metrics-influxdb.png)](http://travis-ci.org/arnobroekhof/hadoop-metrics-influxdb)
+
 tested on Hadoop version 2.7.1
 
 ## Configuration hadoop
-file: hadoop-metrics2.properties
+
+* copy the jar to the classpath and alter the file: hadoop-metrics2.properties with the following content:
 
 ```
 *.sink.file.class=org.apache.hadoop.metrics2.sink.InfluxdbSink
